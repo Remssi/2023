@@ -52,8 +52,7 @@ import scala.collection.mutable.ListBuffer
 
             for (i <- -1 to 1) {
               for (j <- -1 to 1) {
-                
-                if (!(i == 0 && j == 0)) {
+                if (!(i == currentLineIndex && j == charIndex)) {
                   val x = currentLineIndex + i
                   val y = charIndex + j
 
