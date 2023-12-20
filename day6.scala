@@ -8,10 +8,7 @@ Distance:  9  40  200"""
   val inputLines = input.split("\n")
 
   def findIntegers(string: String): List[Int] = {
-    ("""\d+""".r findAllIn string
-      .split(":")
-      .tail(0)).toList
-      .map(_.toInt)
+    ("""\d+""".r findAllIn string).toList.map(_.toInt)
   }
 
   val raceTimes = findIntegers(inputLines.head)
